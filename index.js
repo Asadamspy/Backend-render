@@ -13,6 +13,10 @@ app.get("/status", (req, res) => {
   res.json({ message: "✅ Backend is live and healthy!" });
 });
 
+app.get("/api/greet", (req, res) => {
+  res.json({ message: "Hello from backend API 👋" });
+});
+
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
